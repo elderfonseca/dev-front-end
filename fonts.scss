@@ -1,0 +1,14 @@
+//
+// mixin para declaração de fontes
+//
+@mixin declare-font-face($font-family, $font-name, $font-ext, $font-format) {
+	@font-face {
+		font-family: '#{$font-family}';
+		url(font-path('../src/fonts/#{$font-name}.#{$font-ext}')) format('#{$font-format}'),
+	}
+}
+
+@include declare-font-face('BenchnineBold', 'benchnine-bold', 'ttf', 'truetype');
+@include declare-font-face('BenchnineLight', 'benchnine-light', 'ttf', 'truetype');
+@include declare-font-face('RobotoBold', 'roboto-bold', 'woff', 'woff');
+@include declare-font-face('RobotoRegular', 'roboto-regular', 'woff', 'woff');
