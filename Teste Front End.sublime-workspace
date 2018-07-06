@@ -3,18 +3,41 @@
 	{
 		"selected_items":
 		[
+			[
+				"l",
+				"link\tTag"
+			],
+			[
+				"s",
+				"src"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n\t<html>\n\t\t<head>\n\t\t\t<meta charset=utf-8>\n\t\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t\t\t<title>Untitled Document</title>\n\t\t</head>\n\n\t\t<body>\n\t\t</body>\n\t</html>",
 			"file": "index.html",
-			"file_size": 316,
-			"file_write_time": 131753087364509990,
 			"settings":
 			{
-				"buffer_size": 188,
+				"buffer_size": 346,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/css/fonts.scss",
+			"settings":
+			{
+				"buffer_size": 578,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1109,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -50,12 +73,20 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/css",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/fonts"
+	],
 	"file_history":
 	[
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/.gitignore",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/estilos.css"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -69,6 +100,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"filename",
+			"$name",
+			"$nome"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -76,6 +110,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$fontFamily"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -95,15 +130,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 188,
+						"buffer_size": 346,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								181,
-								181
+								265,
+								265
 							]
 						],
 						"settings":
@@ -116,17 +151,74 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/css/fonts.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 39.0
 	},
 	"layout":
 	{
@@ -155,11 +247,15 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 77.0
+	},
 	"pinned_build_system": "",
 	"project": "Teste Front End.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -197,7 +293,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
