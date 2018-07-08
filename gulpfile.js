@@ -6,7 +6,7 @@ var rename = require('gulp-rename');
  * Variaveis
  */
 // Arquivo Sass
-var scssFiles = './src/css/fonts.scss';
+var scssFiles = './src/css/bootstrap-grid.scss';
 
 // Destino do CSS
 var cssDest = './src/css';
