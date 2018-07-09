@@ -1,12 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
+var cssmin = require ('gulp-clean-css')
 
 /*
  * Variaveis
  */
 // Arquivo Sass
-var scssFiles = './src/css/bootstrap-grid.scss';
+var scssFiles = './src/sass/*.scss';
 
 // Destino do CSS
 var cssDest = './src/css';
@@ -35,7 +36,10 @@ gulp.task('sassdev', function() {
 gulp.task('sassprod', function() {
   return gulp.src(scssFiles)
     .pipe(sass(sassProdOptions).on('error', sass.logError))
-    .pipe(rename('fonts.min.css'))
+    .pipe(cssmin(''))
+	.pipe(rename({
+		suffix:'.min'
+	}))
     .pipe(gulp.dest(cssDest));
 });
 
