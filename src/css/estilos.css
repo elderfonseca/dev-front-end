@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "BenchnineBold";
+  src: url("../fonts/benchnine-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BenchnineLight";
+  src: url("../fonts/benchnine-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/roboto-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/roboto-regular.woff") format("woff");
+}
+
+body {
+  margin: 0px;
+}
+
+.div-menu {
+  margin-top: 90px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-principal {
+  margin-top: 90px;
+  padding: 0;
+  list-style-type: none;
+  font-family: RobotoBold;
+  font-size: 12px;
+  letter-spacing: 2.8px;
+}
+
+.menu-principal li {
+  padding-bottom: 45px;
+}
+
+.menu-principal li a {
+  color: #414042;
+}
+
+.menu-principal li a:link {
+  text-decoration: none;
+}
+
+.menu-principal li a:visited {
+  text-decoration: none;
+}
+
+.menu-principal li a:hover {
+  background-image: url("../img/hamburger.svg");
+  background-size: 80%;
+}
+
+.menu-principal li a:active {
+  text-decoration: none;
+}

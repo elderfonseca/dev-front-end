@@ -1,0 +1,64 @@
+//
+//Arquivo SASS para todos os estilos da página
+//
+
+//
+// mixin para declaração de fontes
+//
+@mixin declare-font-face($font-family, $font-name, $font-ext, $font-format) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src:(url('../fonts/#{$font-name}.#{$font-ext}')) format('#{$font-format}'),
+	}
+}
+
+@include declare-font-face('BenchnineBold', 'benchnine-bold', 'ttf', 'truetype');
+@include declare-font-face('BenchnineLight', 'benchnine-light', 'ttf', 'truetype');
+@include declare-font-face('RobotoBold', 'roboto-bold', 'woff', 'woff');
+@include declare-font-face('RobotoRegular', 'roboto-regular', 'woff', 'woff');
+
+//Variáveis utilizadas no código
+
+//Trabalhando no body
+
+body {
+	margin:0px
+}
+
+//Trabalhando o menu
+
+.div-menu {
+	margin-top:90px
+}
+
+.logo {
+	width:100px
+}
+
+.menu-principal {
+	margin-top: 90px;
+	padding: 0;
+	list-style-type: none;
+	font-family: RobotoBold;
+	font-size:12px;
+	letter-spacing: 2.8px;
+	li {
+		padding-bottom: 45px;
+		a {
+			color: #414042;
+		}
+		a:link {
+			text-decoration: none
+		}
+		a:visited {
+			text-decoration:none
+		}
+		a:hover {
+			background-image:url('../img/hamburger.svg');
+			background-size: 80%
+		}
+		a:active {
+			text-decoration: none
+		}
+	}
+}
