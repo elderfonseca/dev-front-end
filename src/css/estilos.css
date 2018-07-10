@@ -151,7 +151,9 @@ body {
 
 .fundo-corpo {
   background: url("../img/doodle.svg") no-repeat;
-  background-position: -300px 350px;
+  background-position: -320px 450px;
+  background-size: 840px;
+  margin-left: -15px;
 }
 
 .col-direita {
@@ -186,4 +188,95 @@ body {
   padding-left: 100px;
   padding-right: 10px;
   text-align: right;
+}
+
+.vertical {
+  margin-left: -70px;
+  margin-top: 157px;
+  position: absolute;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.sobre-vert {
+  background-image: linear-gradient(317deg, #fb8916, #ffb300), linear-gradient(#ffdb00, #ffdb00);
+  font-family: BenchnineLight;
+  font-size: 120px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+.contato-dist {
+  padding-left: 37%;
+  padding-top: 17%;
+}
+
+.contato-tit {
+  background-image: linear-gradient(to right, #ff6700, #ff6d00), linear-gradient(#ff7800, #ff7800);
+  font-family: BenchnineLight;
+  font-size: 100px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.96;
+  letter-spacing: 8.9px;
+  text-align: left;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contato-bsb {
+  padding-left: 29.5%;
+}
+
+.contato-sp {
+  padding-left: 17.5%;
+  padding-bottom: 30%;
+}
+
+.contato-sp h3 {
+  margin-top: 43px;
+}
+
+.cidade {
+  font-family: BenchnineBold;
+  font-size: 36px;
+  line-height: 0.67;
+  letter-spacing: 1.1px;
+  color: #ff9100;
+  margin: 0;
+}
+
+.endereco {
+  font-family: RobotoRegular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #414042;
+}
+
+.contato-fundo {
+  background: #ff5600;
+  /* Fallback */
+  background: -moz-linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  /* IE10+ */
+  background-image: linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  /* W3C */
 }
