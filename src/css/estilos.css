@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: "BenchnineRegular";
+  src: url("../fonts/benchnine-regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "RobotoBold";
   src: url("../fonts/roboto-bold.woff") format("woff");
 }
@@ -16,6 +21,11 @@
 @font-face {
   font-family: "RobotoRegular";
   src: url("../fonts/roboto-regular.woff") format("woff");
+}
+
+.div-superior {
+  background: url("../img/doodle.svg") no-repeat;
+  background-position: 300px -350px;
 }
 
 body {
@@ -31,7 +41,7 @@ body {
 }
 
 .menu-principal {
-  margin-top: 90px;
+  margin-top: 100px;
   padding: 0;
   list-style-type: none;
   font-family: RobotoBold;
@@ -40,11 +50,12 @@ body {
 }
 
 .menu-principal li {
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 }
 
 .menu-principal li a {
   color: #414042;
+  padding: 0 2px 0 4px;
 }
 
 .menu-principal li a:link {
@@ -56,10 +67,123 @@ body {
 }
 
 .menu-principal li a:hover {
-  background-image: url("../img/hamburger.svg");
-  background-size: 80%;
+  background: #ffdb00;
+  /* Fallback */
+  background: -moz-linear-gradient(180deg, #ffffff 60%, #ffdb00 40%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(180deg, #ffffff 60%, #ffdb00 40%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(180deg, #ffffff 60%, #ffdb00 40%);
+  /* IE10+ */
+  background-image: linear-gradient(180deg, #ffffff 60%, #ffdb00 40%);
+  /* W3C */
+  background-repeat: no-repeat;
 }
 
 .menu-principal li a:active {
   text-decoration: none;
+}
+
+.div-topo {
+  background-image: linear-gradient(220deg, rgba(255, 86, 0, 0.8), rgba(255, 179, 0, 0.8)), url("../img/bg-home-bsb.jpg");
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 780px;
+  mix-blend-mode: screen;
+}
+
+.menu-idiomas {
+  list-style-type: none;
+  font-family: RobotoBold;
+  font-size: 7px;
+  letter-spacing: 1px;
+  margin-top: 21%;
+  float: right;
+}
+
+.menu-idiomas li {
+  display: inline;
+}
+
+.menu-idiomas li a {
+  color: #414042;
+  padding: 0 3px 0 3px;
+}
+
+.menu-idiomas li a:link {
+  text-decoration: none;
+}
+
+.menu-idiomas li a:visited {
+  text-decoration: none;
+}
+
+.menu-idiomas li a:hover {
+  background-size: 15px 4px;
+  background-position: left center;
+  background: #ffdb00;
+  /* Fallback */
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  /* IE10+ */
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  /* W3C */
+  background-repeat: no-repeat;
+}
+
+.menu-idiomas li a:active {
+  text-decoration: none;
+}
+
+.txt-topo {
+  font-family: BenchnineBold;
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 1;
+  width: auto;
+  clear: right;
+  float: right;
+  margin-top: 30%;
+}
+
+.fundo-corpo {
+  background: url("../img/doodle.svg") no-repeat;
+  background-position: -300px 350px;
+}
+
+.col-direita {
+  mix-blend-mode: screen;
+  background: #ffb300;
+  /* Fallback */
+  background: -moz-linear-gradient(37deg, #ff5600, #ffb300);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(37deg, #ff5600, #ffb300);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(37deg, #ff5600, #ffb300);
+  /* IE10+ */
+  background-image: linear-gradient(37deg, #ff5600, #ffb300);
+  /* W3C */
+  background-origin: padding-box;
+}
+
+.titulo-sobre {
+  font-family: BenchnineBold;
+  font-size: 30px;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.p-sobre {
+  font-family: RobotoRegular;
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+  padding-right: 10px;
+  text-align: right;
 }

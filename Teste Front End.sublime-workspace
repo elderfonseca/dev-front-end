@@ -4,12 +4,108 @@
 		"selected_items":
 		[
 			[
-				"Roboto",
-				"RobotoBold"
+				"paddin",
+				"padding-left"
+			],
+			[
+				"mi",
+				"mix-blend-mode"
+			],
+			[
+				"li",
+				"linearGradient"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"colo",
+				"color"
 			],
 			[
 				"font",
+				"font-size"
+			],
+			[
+				"fon",
 				"font-family"
+			],
+			[
+				"Ben",
+				"BenchnineBold"
+			],
+			[
+				"col-lg",
+				"col-lg-2"
+			],
+			[
+				"col",
+				"col-lg-8"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"ff",
+				"ffdb00"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"img",
+				"imgGradient-topo"
+			],
+			[
+				"co",
+				"color1"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"color",
+				"color2"
+			],
+			[
+				"tt",
+				"ttf"
+			],
+			[
+				"linear",
+				"linearGradient"
+			],
+			[
+				"Roboto",
+				"RobotoBold"
 			],
 			[
 				"mar",
@@ -31,7 +127,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4642,
+				"buffer_size": 4515,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -41,16 +137,16 @@
 			"settings":
 			{
 				"buffer_size": 648,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/sass/fonts.scss",
+			"file": "src/css/bootstrap-grid.css",
 			"settings":
 			{
-				"buffer_size": 577,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 24986,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -66,9 +162,17 @@
 			"file": "src/sass/estilos.scss",
 			"settings":
 			{
-				"buffer_size": 1198,
+				"buffer_size": 4254,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/css/estilos.css",
+			"settings":
+			{
+				"buffer_size": 3915,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -108,10 +212,16 @@
 		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/css",
 		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/fonts",
 		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/img",
-		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass"
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass/mixins"
 	],
 	"file_history":
 	[
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass/fonts.scss",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass/mixins/_grid.scss",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass/_variables.scss",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass/_functions.scss",
+		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/sass/_grid.scss",
 		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/img/hamburger.svg",
 		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/src/css/fonts.scss",
 		"/C/Users/ACER F5-573G-50KS/Documents/Elder/Trabalho/Teste Front End/.gitignore",
@@ -119,7 +229,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -133,6 +243,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"grid-gutter-width",
+			"container",
+			"padding",
+			"Regular",
+			"$perc2",
+			"$perc1",
+			"$perc1,",
+			"7",
+			"perc2",
+			"perc1",
+			"51%",
+			"50%",
+			"50",
+			"color2",
+			"$bottom",
+			"top",
 			"<li>",
 			"filename",
 			"$name",
@@ -164,15 +290,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4642,
+						"buffer_size": 4515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1237,
-								1237
+								2272,
+								2272
 							]
 						],
 						"settings":
@@ -180,10 +306,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -199,8 +325,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								392,
+								392
 							]
 						],
 						"settings":
@@ -216,30 +342,32 @@
 				},
 				{
 					"buffer": 2,
-					"file": "src/sass/fonts.scss",
+					"file": "src/css/bootstrap-grid.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 577,
+						"buffer_size": 24986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								577
+								258,
+								258
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/sass-textmate-bundle/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -267,7 +395,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -276,15 +404,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1198,
+						"buffer_size": 4254,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								976,
-								976
+								3943,
+								3943
 							]
 						],
 						"settings":
@@ -292,10 +420,40 @@
 							"syntax": "Packages/sass-textmate-bundle/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 2754.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/css/estilos.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3545,
+								3545
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2726.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

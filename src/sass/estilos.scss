@@ -3,8 +3,33 @@
 //
 
 //
-// mixin para declaração de fontes
+//Mixins
 //
+
+// mixin para linear-gradient do menu
+@mixin linearGradient($angulo, $color1, $color2, $perc1, $perc2){
+    background: $color2; /* Fallback */
+    background: -moz-linear-gradient($angulo, $color1 $perc1, $color2 $perc2); /* FF3.6+ */
+    background: -webkit-linear-gradient($angulo, $color1 $perc1,$color2 $perc2); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient($angulo, $color1 $perc1,$color2 $perc2); /* IE10+ */
+    background-image: linear-gradient($angulo, $color1 $perc1,$color2 $perc2); /* W3C */
+}
+
+//mixin para gradiente da coluna direita
+@mixin linearGradientCol($angulo, $color1, $color2){
+    background: $color2; /* Fallback */
+    background: -moz-linear-gradient($angulo, $color1 , $color2); /* FF3.6+ */
+    background: -webkit-linear-gradient($angulo, $color1 ,$color2); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient($angulo, $color1 ,$color2); /* IE10+ */
+    background-image: linear-gradient($angulo, $color1 ,$color2); /* W3C */
+}
+
+//mixin para background do topo
+@mixin imgGradient-topo($angulo, $color1, $color2, $imagem){
+	background-image: linear-gradient($angulo, $color1, $color2), url('../img/#{$imagem}');
+}
+
+// mixin para declaração de fontes
 @mixin declare-font-face($font-family, $font-name, $font-ext, $font-format) {
 	@font-face {
 		font-family: '#{$font-family}';
@@ -14,10 +39,22 @@
 
 @include declare-font-face('BenchnineBold', 'benchnine-bold', 'ttf', 'truetype');
 @include declare-font-face('BenchnineLight', 'benchnine-light', 'ttf', 'truetype');
+@include declare-font-face('BenchnineRegular', 'benchnine-regular', 'ttf', 'truetype');
 @include declare-font-face('RobotoBold', 'roboto-bold', 'woff', 'woff');
 @include declare-font-face('RobotoRegular', 'roboto-regular', 'woff', 'woff');
 
-//Variáveis utilizadas no código
+//
+//Variáveis
+//
+$cor-degrade1: #ff5600;
+$cor-degrade2: #ffb300;
+
+//Background da Row do topo
+
+.div-superior {
+	background: url('../img/doodle.svg') no-repeat;
+	background-position: 300px -350px;
+}
 
 //Trabalhando no body
 
@@ -36,16 +73,17 @@ body {
 }
 
 .menu-principal {
-	margin-top: 90px;
+	margin-top: 100px;
 	padding: 0;
 	list-style-type: none;
 	font-family: RobotoBold;
 	font-size:12px;
 	letter-spacing: 2.8px;
 	li {
-		padding-bottom: 45px;
+		padding-bottom: 40px;
 		a {
 			color: #414042;
+			padding: 0 2px 0 4px;
 		}
 		a:link {
 			text-decoration: none
@@ -54,11 +92,95 @@ body {
 			text-decoration:none
 		}
 		a:hover {
-			background-image:url('../img/hamburger.svg');
-			background-size: 80%
+			@include linearGradient (180deg, #ffffff, #ffdb00, 60%, 40%);
+			background-repeat: no-repeat;
 		}
 		a:active {
 			text-decoration: none
 		}
 	}
+}
+
+//Trabalhando o topo ao lado do menu
+.div-topo {
+	@include imgGradient-topo (220deg, rgba(255, 86, 0, 0.8), rgba(255, 179, 0, 0.8), 'bg-home-bsb.jpg');
+	background-size: 900px;
+	background-repeat: no-repeat;
+	height: 780px;
+	mix-blend-mode: screen;
+}
+
+.menu-idiomas {
+	list-style-type: none;
+	font-family: RobotoBold;
+	font-size: 7px;
+	letter-spacing: 1px;
+	margin-top: 21%;
+	float: right;
+	li {
+		display: inline;
+		a {
+			color: #414042;
+			padding: 0 3px 0 3px
+		}
+		a:link {
+			text-decoration: none;
+		}
+		a:visited {
+			text-decoration:none
+		}
+		a:hover {
+			background-size: 15px 4px;
+			background-position: left center;
+			@include linearGradient (180deg, rgba(255,255,255,0), rgba(255, 219, 0, 1), 55%, 45%);
+			background-repeat: no-repeat;
+		}
+		a:active {
+			text-decoration: none
+		}
+	}
+}
+
+.txt-topo {
+	font-family: BenchnineBold;
+	font-size: 50px;
+	color: #ffffff;
+	line-height: 1;
+	width: auto;
+	clear: right;
+	float: right;
+	margin-top: 30%;
+}
+
+//Background do Fundo do corpo
+.fundo-corpo {
+	background: url('../img/doodle.svg') no-repeat;
+	background-position: -300px 350px;
+}
+
+//Trabalhando na área "SOBRE"
+
+.col-direita {
+	mix-blend-mode: screen;
+	@include linearGradientCol (37deg, #ff5600, #ffb300);
+	background-origin: padding-box;
+}
+
+.titulo-sobre {
+	font-family: BenchnineBold;
+	font-size:30px;
+	padding-top:60px;
+	padding-left:40px
+}
+
+.p-sobre {
+	font-family: RobotoRegular;
+	font-size:12px;
+	line-height:26px;
+	letter-spacing:0.4px;
+	padding-top:50px;
+	padding-bottom:120px;
+	padding-left:100px;
+	padding-right:10px;
+	text-align: right;
 }
