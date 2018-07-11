@@ -4,43 +4,54 @@
 			<meta charset=utf-8>
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-			<!--CSS-->
-			<link rel="stylesheet" type="text/css" href="./src/css/estilos.css">
-			<link rel="stylesheet" type="text/css" href="./src/css/fonts.css">
-            
+
             <!--Bootstrap-->
 			<link rel="stylesheet" type="text/css" href="./src/css/bootstrap-grid.css">
+
+			<!--CSS-->
+			<link rel="stylesheet" type="text/css" href="./src/css/estilos.css">
+			<link rel="stylesheet" type="text/css" href="./src/icons/css/all.css">
 
 			<title>Untitled Document</title>
 		</head>
 
 		<body>
         	<div class="container-fluid">
+        		<div class="row">
+    				<div class="col-md-12">
+      					<div class="alert alert-info" role="alert" id="translatoin-incomplete">
+        					Tradução incompleta
+      					</div>
+      					<div class="alert alert-danger" role="alert" id="translatoin-unavailable">
+        					Tradução indisponivel
+      					</div>
+    				</div>
+  				</div>
             	<div class="row div-superior">
                 	<div class="col-md-2 col-lg-2">
                     </div>
                 	<div align="center" class="col-sm-12 col-md-2 col-lg-2 div-menu">
-                    	<img src="src/img/icom_logo.svg" class="logo">
-                        <ul class="menu-principal">
-                        	<li><a href="#">SOBRE</a></li>
-                            <li><a href="#">SERVIÇOS</a></li>
-                            <li><a href="#">PORTFÓLIO</a></li>
-                            <li><a href="#">PREMIOS</a></li>
-                            <li><a href="#">CLIENTES</a></li>
-                            <li><a href="#">CONTATO</a></li>
-                        </ul>
+                    	<img src="src/img/icom_logo.svg" class="logo" title="Icom">
+                        <div class="nav">
+                        	<ul class="nav-list">
+                        		<li class="nav-item" title="Sobre"><a href="#" data-lang-str="Sobre">SOBRE</a></li>
+                            	<li class="nav-item" title="Serviços"><a href="#" data-lang-str="Serviços">SERVIÇOS</a></li>
+                            	<li class="nav-item" title="Portfólio"><a href="#" data-lang-str="Portfólio">PORTFÓLIO</a></li>
+                            	<li class="nav-item" title="Premios"><a href="#" data-lang-str="Premios">PRÊMIOS</a></li>
+                            	<li class="nav-item" title="Clientes"><a href="#" data-lang-str="Clientes">CLIENTES</a></li>
+                            	<li class="nav-item" title="Contato"><a href="#" data-lang-str="Contato">CONTATO</a></li>
+                        	</ul>
+                        </div>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-8 div-topo">
                     	<div class="row">
                     		<div class="col-md-7 col-lg-7">
-                    			<div>
-                        			<ul class="menu-idiomas">
-                            			<li><a href='#'>PT</a></li>
-                                		<li><a href='#'>EN</a></li>
-                            		</ul>
-                        		</div>
+                    			<div class="menu-idiomas">
+                            		<button class="trad" title="LG-PT" name="btn-translate" data-lang="pt-br">PT</button>
+                                	<button class="trad" title="LG-US" name="btn-translate" data-lang="en">EN</button>
+                            	</div>
                         		<div>
-                        			<h2 class="txt-topo">
+                        			<h2 class="txt-topo" title="Topo" data-lang-str="Texto topo">
                             			UNT ILLESTO RIBUS<br />
                                 		CONSEQUIAM FACCUS<br />
                                 		REPUDISQUIS ALITI<br />
@@ -57,18 +68,18 @@
                 		<div class="col-md-2 col-lg-2 col-direita">
                     	</div>
                     	<div class="col-sm-9 col-md-5 col-lg-5">
-                    		<h3 class="titulo-sobre">
+                    		<h3 class="titulo-sobre" title="Sobre" data-lang-str="Sobre1">
                         		ET ESSI REREPERA VOLES<br />
                             	UT FACEPTU RENDIT QUIDENDIT<br />
                             	ETUM VEL MODIANT
                         	</h3>
-                        	<p class="p-sobre">
+                        	<p class="p-sobre" title="Texto Sobre" data-lang-str="Sobre2">
                         		Ex estore conse plabo. Et essi rerepera voles ut faceptu rendit quidendit etum vel modiant et pro occullaccum ditiatum cum nobiscipsus, ut que voluptae. Itatur reiciis erit pe mo estis nonestrum et litectotame pro magnihi ciumquas net des ut exerum qui quos et erum, sam quam volesendi doluptatur a venis et harcidus molor repe voluptatatem destio. Parcipi cipiciistiis utem a cuptatemquid magname landus ad que maio dolupta quiasitatur abor aut eat.Aqui utati iliquae mos delit, autenim iligeni ssitatio maiosae nus excepe vent. Epudae nonsectoris culpa site natioriossi quo velitias volorum simi
                         	</p>
                     	</div>
                     	<div class="col-sm-3 col-md-5 col-lg-5">
                     		<div class="vertical">
-                    			<h1 class="sobre-vert">
+                    			<h1 class="sobre-vert" title="Titulo Sobre" data-lang-str="Sobre3">
                         			SOBRE
                         		</h1>
                     		</div>
@@ -80,31 +91,42 @@
                     	</div>
                     	<div class="col-sm-12 col-md-10 col-lg-10 contato-fundo">
                     		<div class="contato-dist">
-                    			<h1 class="contato-tit">
+                    			<h1 class="contato-tit" title="Contatos" data-lang-str="Contatos">
                     				CONTATOS
                     			</h1>
                     		</div>
                     		<div class="contato-bsb">
-                    			<h3 class="cidade">
+                    			<h3 class="cidade" title="Brasilia">
                     				BRASÍLIA/DF
                     			</h3>
-                    			<p class="endereco">
+                    			<p class="endereco" title="Endereço Brasilia" data-lang-str="Endereço Brasilia">
                     				SAUS, Quadra 5  |  Bloco N  |  Lote 2  |  10.º andar<br />
                     				Tel.: +55 (61) 3208-1155
                     			</p>
                     		</div>
                     		<div class="contato-sp">
-                    			<h3 class="cidade">
+                    			<h3 class="cidade" title="São Paulo">
                     				SÃO PAULO/SP
                     			</h3>
-                    			<p class="endereco">
+                    			<p class="endereco" title="Endereço São Paulo" data-lang-str="Endereço São Paulo">
                     				Rua Estados Unidos 367, Jardim Paulista<br />
                     				Tel.: +55 (61) 3208-1155
                     			</p>
+                    		</div>
+                    		<div class="contato-social">
+                    			<ul class="social">
+                    				<li class="item-social"><a href="#" class="fab fa-facebook-f" title="Facebook"></a></li>
+                    				<li class="item-social"><a href="#" class="fab fa-twitter" title="Twitter"></a></li>
+                    				<li class="item-social"><a href="#" class="fab fa-linkedin" title="LinkedIn"></a></li>
+                    				<li class="item-social"><a href="#" class="fab fa-google-plus" title="Google Plus"></a></li>
+                    				<li class="item-social"><a href="#" class="fab fa-youtube" title="YouTube"></a></li>
+                    			</ul>
                     		</div>
                     	</div>
                 	</div>
             	</div>
         	</div>
+        	<script type="text/javascript" src="./src/js/jquery.min.js"></script>
+        	<script type="text/javascript" src="./src/js/tradutor.js"></script>
 		</body>
 	</html>

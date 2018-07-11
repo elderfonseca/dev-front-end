@@ -15,6 +15,7 @@
     background-image: linear-gradient($angulo, $color1 $perc1,$color2 $perc2); /* W3C */
 }
 
+//mixin para gradiente do triangulo
 @mixin linearGradientTrian($angulo, $color1, $color2, $color3, $perc1, $perc2){
     background: $color2; /* Fallback */
     background: -moz-linear-gradient($angulo, $color1, $color2 $perc1, $color3 $perc2); /* FF3.6+ */
@@ -50,6 +51,19 @@
 	}
 }
 
+//mixin para media queries
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (min-width: $break-small) and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-medium) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
 @include declare-font-face('BenchnineBold', 'benchnine-bold', 'ttf', 'truetype');
 @include declare-font-face('BenchnineLight', 'benchnine-light', 'ttf', 'truetype');
 @include declare-font-face('BenchnineRegular', 'benchnine-regular', 'ttf', 'truetype');
@@ -62,6 +76,10 @@
 $cor-degrade1: #ff5600;
 $cor-degrade2: #ffb300;
 $rotate: -90deg;
+$break-small: 568px;
+$break-medium: 768px;
+$break-large: 992px;
+
 
 //Background da Row do topo
 
@@ -86,15 +104,21 @@ body {
 	width:100px
 }
 
-.menu-principal {
-	margin-top: 100px;
-	padding: 0;
-	list-style-type: none;
+.nav {
+	position: relative;
+}
+
+.nav {
+	margin-top: 40%;
 	font-family: RobotoBold;
 	font-size:12px;
 	letter-spacing: 2.8px;
+	ul {
+		padding: 0;
+	}
 	li {
 		padding-bottom: 40px;
+		list-style-type: none;
 		a {
 			color: #414042;
 			padding: 0 2px 0 4px;
@@ -125,35 +149,42 @@ body {
 }
 
 .menu-idiomas {
-	list-style-type: none;
+	margin-top: 21%;
+	float: right;
+}
+	
+.trad{
+	float:left;
 	font-family: RobotoBold;
 	font-size: 7px;
 	letter-spacing: 1px;
-	margin-top: 21%;
-	float: right;
-	li {
-		display: inline;
-		a {
-			color: #414042;
-			padding: 0 3px 0 3px
-		}
-		a:link {
-			text-decoration: none;
-		}
-		a:visited {
-			text-decoration:none
-		}
-		a:hover {
-			background-size: 15px 4px;
-			background-position: left center;
-			@include linearGradient (180deg, rgba(255,255,255,0), rgba(255, 219, 0, 1), 55%, 45%);
-			background-repeat: no-repeat;
-		}
-		a:active {
-			text-decoration: none
-		}
-	}
+	border: none;
+	color: #414042;
+	padding: 0 3px 0 3px;
+	margin: 0 0 0 5px;
+	background-color: transparent;
 }
+.trad:link {
+	text-decoration: none;
+}
+
+.trad:visited {
+	text-decoration:none;
+}
+.trad:hover {
+	background-size: 15px 4px;
+	background-position: left center;
+	@include linearGradient (180deg, rgba(255,255,255,0), rgba(255, 219, 0, 1), 55%, 55%);
+	background-repeat: no-repeat;
+}
+.trad:active {
+	text-decoration: none;
+}
+.trad:focus {
+	text-decoration: none;
+	outline: none;
+}
+
 
 .txt-topo {
 	font-family: BenchnineBold;
@@ -252,7 +283,6 @@ body {
 
 .contato-sp{
 	padding-left: 17.5%;
-	padding-bottom: 30%;
 	h3 {
 		margin-top: 43px;
 	}
@@ -279,6 +309,35 @@ body {
   	color: #414042;
 }
 
+.social {
+	list-style-type: none;
+	margin-top: 43px;
+	padding-bottom: 40%;
+	li {
+		display: inline;
+		padding-right: 30px;
+		a {
+			background-color: #ff9100;
+			width: 30px;
+			height: 30px;
+			color: white;
+			border-radius: 50%;
+			font-size:1em;
+			text-align: center;
+			line-height: 1.85em;
+		}
+		a:link {
+			text-decoration: none;
+		}
+		a:visited {
+			text-decoration:none;
+		}
+		a:active {
+			text-decoration: none
+		}
+	}
+}
+
 .contato-fundo {
-	@include linearGradientTrian (-45deg, $cor-degrade2, $cor-degrade1, rgba(255,255,255,0), 41%, 41%);
+	@include linearGradientTrian (-45deg, $cor-degrade2, $cor-degrade1, rgba(255,255,255,0), 50%, 50%);
 }

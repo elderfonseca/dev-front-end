@@ -40,33 +40,40 @@ body {
   width: 100px;
 }
 
-.menu-principal {
-  margin-top: 100px;
-  padding: 0;
-  list-style-type: none;
+.nav {
+  position: relative;
+}
+
+.nav {
+  margin-top: 40%;
   font-family: RobotoBold;
   font-size: 12px;
   letter-spacing: 2.8px;
 }
 
-.menu-principal li {
-  padding-bottom: 40px;
+.nav ul {
+  padding: 0;
 }
 
-.menu-principal li a {
+.nav li {
+  padding-bottom: 40px;
+  list-style-type: none;
+}
+
+.nav li a {
   color: #414042;
   padding: 0 2px 0 4px;
 }
 
-.menu-principal li a:link {
+.nav li a:link {
   text-decoration: none;
 }
 
-.menu-principal li a:visited {
+.nav li a:visited {
   text-decoration: none;
 }
 
-.menu-principal li a:hover {
+.nav li a:hover {
   background: #ffdb00;
   /* Fallback */
   background: -moz-linear-gradient(180deg, #ffffff 60%, #ffdb00 40%);
@@ -80,7 +87,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.menu-principal li a:active {
+.nav li a:active {
   text-decoration: none;
 }
 
@@ -93,49 +100,53 @@ body {
 }
 
 .menu-idiomas {
-  list-style-type: none;
-  font-family: RobotoBold;
-  font-size: 7px;
-  letter-spacing: 1px;
   margin-top: 21%;
   float: right;
 }
 
-.menu-idiomas li {
-  display: inline;
-}
-
-.menu-idiomas li a {
+.trad {
+  float: left;
+  font-family: RobotoBold;
+  font-size: 7px;
+  letter-spacing: 1px;
+  border: none;
   color: #414042;
   padding: 0 3px 0 3px;
+  margin: 0 0 0 5px;
+  background-color: transparent;
 }
 
-.menu-idiomas li a:link {
+.trad:link {
   text-decoration: none;
 }
 
-.menu-idiomas li a:visited {
+.trad:visited {
   text-decoration: none;
 }
 
-.menu-idiomas li a:hover {
+.trad:hover {
   background-size: 15px 4px;
   background-position: left center;
   background: #ffdb00;
   /* Fallback */
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 55%);
   /* FF3.6+ */
-  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 55%);
   /* Chrome10+,Safari5.1+ */
-  background: -ms-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  background: -ms-linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 55%);
   /* IE10+ */
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 45%);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, #ffdb00 55%);
   /* W3C */
   background-repeat: no-repeat;
 }
 
-.menu-idiomas li a:active {
+.trad:active {
   text-decoration: none;
+}
+
+.trad:focus {
+  text-decoration: none;
+  outline: none;
 }
 
 .txt-topo {
@@ -240,7 +251,6 @@ body {
 
 .contato-sp {
   padding-left: 17.5%;
-  padding-bottom: 30%;
 }
 
 .contato-sp h3 {
@@ -268,15 +278,49 @@ body {
   color: #414042;
 }
 
+.social {
+  list-style-type: none;
+  margin-top: 43px;
+  padding-bottom: 40%;
+}
+
+.social li {
+  display: inline;
+  padding-right: 30px;
+}
+
+.social li a {
+  background-color: #ff9100;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border-radius: 50%;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.85em;
+}
+
+.social li a:link {
+  text-decoration: none;
+}
+
+.social li a:visited {
+  text-decoration: none;
+}
+
+.social li a:active {
+  text-decoration: none;
+}
+
 .contato-fundo {
   background: #ff5600;
   /* Fallback */
-  background: -moz-linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  background: -moz-linear-gradient(-45deg, #ffb300, #ff5600 50%, rgba(255, 255, 255, 0) 50%);
   /* FF3.6+ */
-  background: -webkit-linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  background: -webkit-linear-gradient(-45deg, #ffb300, #ff5600 50%, rgba(255, 255, 255, 0) 50%);
   /* Chrome10+,Safari5.1+ */
-  background: -ms-linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  background: -ms-linear-gradient(-45deg, #ffb300, #ff5600 50%, rgba(255, 255, 255, 0) 50%);
   /* IE10+ */
-  background-image: linear-gradient(-45deg, #ffb300, #ff5600 41%, rgba(255, 255, 255, 0) 41%);
+  background-image: linear-gradient(-45deg, #ffb300, #ff5600 50%, rgba(255, 255, 255, 0) 50%);
   /* W3C */
 }
